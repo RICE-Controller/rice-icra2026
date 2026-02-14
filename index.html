@@ -362,84 +362,76 @@
 <!-- End youtube video -->
 
 
+
+
 <!-- Video carousel -->
-
-
- <section class="hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-            <div class="column is-4-desktop is-12-mobile">
-              <div class="column is-4-desktop is-12-mobile">
 
-              TODO: Add poster image for better preview 
-              <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-                Your video file here 
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <!-- Slide 1 -->
+        <div class="item">
+          <div class="columns is-variable is-4 is-desktop">
+
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
                 <source src="static/videos/RICE _position.mp4" type="video/mp4">
               </video>
-              </div>
+              <p class="has-text-centered">Position</p>
             </div>
-            <div class="column is-4-desktop is-12-mobile">
-              <div class="column is-4-desktop is-12-mobile"></div>
-              TODO: Add poster image for better preview
-                <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                  Your video file here --
-                  <source src="static/videos/RICE _hybrid.mp4" type="video/mp4">
-                </video>
-                </div>
-            </div>
-            <div class="column is-4-desktop is-12-mobile">
-              <div class="column is-4-desktop is-12-mobile"></div>
-              TODO: Add poster image for better preview
-                <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                  Your video file here --
-                  <source src="static/videos/RICE _linkedin_low_dim.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-        <div class="item item-video2">
-            <div class="column is-4-desktop is-12-mobile">
-              <div class="column is-4-desktop is-12-mobile">
 
-              TODO: Add poster image for better preview 
-              <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-                Your video file here 
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE _hybrid.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Hybrid</p>
+            </div>
+
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE _linkedin_low_dim.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">RICE</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="item">
+          <div class="columns is-variable is-4 is-desktop">
+
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
                 <source src="static/videos/RICE _single_pos.mp4" type="video/mp4">
               </video>
-              </div>
+              <p class="has-text-centered">Single: Position</p>
             </div>
+
             <div class="column is-4-desktop is-12-mobile">
-              <div class="column is-4-desktop is-12-mobile"></div>
-              TODO: Add poster image for better preview
-                <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                  Your video file here --
-                  <source src="static/videos/RICE _single_hybrid.mp4" type="video/mp4">
-                </video>
-                </div>
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE _single_hybrid.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Single: Hybrid</p>
             </div>
+
             <div class="column is-4-desktop is-12-mobile">
-              <div class="column is-4-desktop is-12-mobile"></div>
-              TODO: Add poster image for better preview
-                <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                  Your video file here --
-                  <source src="static/videos/RICE _single_rice.mp4" type="video/mp4">
-                </video>
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE _single_rice.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Single: RICE</p>
             </div>
+
+          </div>
         </div>
-        <div class="item item-video3">
-          -- TODO: Add poster image for better preview --
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            -- Your video file here --
-            <source src="static/videos/RICE _linkedin_low_dim.mp4" type="video/mp4">
-          </video>
-        </div>
+
       </div>
     </div>
   </div>
-</section> 
-
+</section>
 
 <!-- End video carousel -->
 
