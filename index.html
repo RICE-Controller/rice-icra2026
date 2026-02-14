@@ -364,56 +364,68 @@
 
 <!-- Video carousel -->
 
-
- <section class="hero is-small">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-            <div class="column is-4-desktop is-12-mobile">
+    <div class="container is-fluid">
+      <h2 class="title is-3 has-text-centered">Qualitative Videos</h2>
 
-            TODO: Add poster image for better preview 
-            <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-              Your video file here 
-              <source src="static/videos/RICE _position.mp4" type="video/mp4">
-            </video>
-            </div>
+      <div id="video-carousel" class="carousel">
+        <!-- Slide 1: three videos -->
+        <div class="item">
+          <div class="columns is-variable is-4 is-desktop">
             <div class="column is-4-desktop is-12-mobile">
-
-            TODO: Add poster image for better preview
-              <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                Your video file here --
-                <source src="static/videos/RICE _hybrid.mp4" type="video/mp4">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE_position.mp4" type="video/mp4">
               </video>
+              <p class="has-text-centered">Artificial Plant: Position Controller</p>
             </div>
-            <div class="column is-4-desktop is-12-mobile">
 
-            TODO: Add poster image for better preview
-              <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-                Your video file here --
-                <source src="static/videos/RICE _linkedin_low_dim.mp4" type="video/mp4">
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE_hybrid.mp4" type="video/mp4">
               </video>
+              <p class="has-text-centered">Artificial Plant: Hybrid Controller</p>
             </div>
+
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/RICE_linkedin_low_dim.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Artificial Plant: RICE Controller</p>
+            </div>
+          </div>
         </div>
-        <div class="item item-video2">
-         TODO: Add poster image for better preview
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-             Your video file here --
-            <source src="static/videos/RICE _hybrid.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          -- TODO: Add poster image for better preview --
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            -- Your video file here --
-            <source src="static/videos/RICE _linkedin_low_dim.mp4" type="video/mp4">
-          </video>
+
+        <!-- Slide 2: next three videos -->
+        <div class="item">
+          <div class="columns is-variable is-4 is-desktop">
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/VIDEO4.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Video 4</p>
+            </div>
+
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/VIDEO5.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Video 5</p>
+            </div>
+
+            <div class="column is-4-desktop is-12-mobile">
+              <video controls muted loop playsinline preload="metadata" style="width:100%; height:auto;">
+                <source src="static/videos/VIDEO6.mp4" type="video/mp4">
+              </video>
+              <p class="has-text-centered">Video 6</p>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-</section> 
+</section>
 
 
 <!-- End video carousel -->
