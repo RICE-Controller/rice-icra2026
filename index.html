@@ -366,18 +366,29 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-              <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/RICE _position.mp4" type="video/mp4">
-      </video>
-                    <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/RICE _hybrid.mp4.mp4" type="video/mp4">
-      </video>
-                    <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/RICE _linkedin_low_dim.mp4.mp4" type="video/mp4">
-      </video>
+<div class="column is-4">
+          <video autoplay controls muted loop playsinline preload="metadata" width="100%">
+            <source src="static/videos/RICE_position.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered">RICE Position</p>
+        </div>
+
+        <div class="column is-4">
+          <video autoplay controls muted loop playsinline preload="metadata" width="100%">
+            <source src="static/videos/RICE_hybrid.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered">RICE Hybrid</p>
+        </div>
+
+        <div class="column is-4">
+          <video autoplay controls muted loop playsinline preload="metadata" width="100%">
+            <source src="static/videos/RICE_linkedin_low_dim.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered">RICE Low-Dim</p>
+        </div>
+
+      </div>
+
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
           Qualitative test in Artificial plant
