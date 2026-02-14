@@ -2,16 +2,6 @@ window.HELP_IMPROVE_VIDEOJS = false;
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  // init ALL carousels (safest)
-  bulmaCarousel.attach('.carousel', {
-    slidesToScroll: 1,
-    slidesToShow: 1,
-    navigation: true,
-    pagination: true,
-    loop: false
-  });
-});
 
 
 // More Works Dropdown Functionality
@@ -154,3 +144,58 @@ $(document).ready(function() {
     setupVideoCarouselAutoplay();
 
 })
+
+window.HELP_IMPROVE_VIDEOJS = false;
+
+function pauseAllVideosIn(el) {
+  el.querySelectorAll('video').forEach(v => {
+    try { v.pause(); } catch (e) {}
+  });
+}
+
+function loadVideosIn(el) {
+  el.querySelectorAll('video').forEach(v => {
+    try { v.load(); } catch (e) {}
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // 1) IMAGE carousel (your old results-carousel)
+  bulmaCarousel.attach('#results-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    loop: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    navigation: true,
+    pagination: true
+  });
+
+  // 2) VIDEO carousel (3 videos per slide)
+  const videoCarousels = bulmaCarousel.attach('#video-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    loop: false,
+    infinite: false,
+    autoplay: false,
+    navigation: true,
+    pagination: true
+  });
+
+  // Workaround: when the slide changes, pause everything, then reload active videos
+  videoCarousels.forEach(c => {
+    c.on('before:show', () => {
+      const root = document.querySelector('#video-carousel');
+      if (root) pauseAllVideosIn(root);
+    });
+
+    c.on('after:show', () => {
+      const active = document.querySelector('#video-carousel .is-active') || document.querySelector('#video-carousel');
+      if (active) loadVideosIn(active);
+    });
+  });
+
+  // Sliders (if you use them)
+  if (window.bulmaSlider) bulmaSlider.attach();
+});
