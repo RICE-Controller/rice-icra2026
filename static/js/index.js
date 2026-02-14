@@ -1,5 +1,19 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  // init ALL carousels (safest)
+  bulmaCarousel.attach('.carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    navigation: true,
+    pagination: true,
+    loop: false
+  });
+});
+
+
 // More Works Dropdown Functionality
 function toggleMoreWorks() {
     const dropdown = document.getElementById('moreWorksDropdown');
